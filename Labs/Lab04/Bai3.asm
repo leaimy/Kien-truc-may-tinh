@@ -8,12 +8,12 @@
   MOV AX,@DATA
   MOV DS,AX 
 
-  CALL HA 
+  CALL HAGAU
   
   MOV AH,4Ch
   INT 21h  
   
-  HA PROC
+  HAGAU PROC
      PRINT:  
       MOV AH,9h
       LEA DX,MSG
@@ -38,7 +38,7 @@
       MOV DL,BL
       INT 21h
     RET
-    HA ENDP
+    HAGAU ENDP
   
  
 END
