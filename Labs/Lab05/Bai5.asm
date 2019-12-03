@@ -39,6 +39,7 @@ INPUT:
    MUL DX ; => AX = AX * DX=TONG *10
    ADD AX,CX 
    MOV TONG,AX
+<<<<<<< HEAD
    JMP INPUT
 
 BREAK:   
@@ -69,6 +70,9 @@ PRINT:
    LOOP PRINT
    
       
+=======
+   JMP INPUT      
+>>>>>>> 3639975a398ca049773291a1bb4783bc79e2de8e
    
 KETTHUC:
    MOV AH,4Ch
